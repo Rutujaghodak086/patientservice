@@ -19,5 +19,6 @@ public class Patient {
 	private Float mob;
 	private String mail;
 	private String address;
+	private String date;
 	
 }

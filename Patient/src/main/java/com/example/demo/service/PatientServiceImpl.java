@@ -46,4 +46,30 @@ public class PatientServiceImpl implements PatientService {
 		return pr.save(p);
 	}
 
+	@Override
+	public Patient searchByName(String name) {
+		// TODO Auto-generated method stub
+		return pr.findByName(name);
+	}
+
+	@Override
+	public Patient searchByAge(Integer age) {
+		// TODO Auto-generated method stub
+		return pr.findByAge(age);
+	}
+
+	@Override
+	public Patient searchByDate(String date) {
+		// TODO Auto-generated method stub
+		return pr.findByDate(date);
+	}
+
+	@Override
+	public List<Patient> searchByGender(String gender) {
+		// TODO Auto-generated method stub
+		return pr.findByGender(gender);
+	}
+
+	
+
 }

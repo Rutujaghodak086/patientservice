@@ -17,4 +17,13 @@ public interface PatientService {
 
 	Patient update(Integer id, Patient p);
 
+	Patient searchByName(String name);
+
+	Patient searchByAge(Integer age);
+
+	Patient searchByDate(String date);
+
+	List<Patient> searchByGender(String gender);
+
+	
 }
